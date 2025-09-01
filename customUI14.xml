@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+		  xmlns:kolodka="https://www.vbaplanet.com/articles/customexcelribbon.php">
+		  
+	<ribbon startFromScratch="false">
+		<tabs>
+			<tab idQ="kolodka:Tab"
+				 label="Проверка"
+				 insertBeforeMso="TabHome">			
+				 
+				<group idQ="kolodka:Group"
+					   label="Test">
+					   					   
+					<button id="FirstButton"
+							imageMso="MergeToWord"
+							supertip="Подсказка"
+							label="Один"
+							keytip="1"
+							size="large"
+							onAction="OnFirstRibbonButtonPressed"/>
+					
+					<button id="SecondButton"
+							imageMso="AboveText"
+							supertip="Подсказка"
+							label="Два"
+							keytip="2"
+							size="large"
+							onAction="OnSecondRibbonButtonPressed"/>
+					
+					<button id="ThirdButton"
+							imageMso="Help"
+							supertip="Советы и подсказки по работе         с приложением"
+							label="Три"
+							keytip="3"
+							size="large"
+							onAction="OnThirdRibbonButtonPressed"/>
+
+				</group>
+
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
